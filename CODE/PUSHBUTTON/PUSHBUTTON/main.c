@@ -9,11 +9,11 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define DIR_SW1		DDRB & (~(1<<PB0))			//	Direction of the PB0
-#define DIR_SW2		DDRB & (~(1<<PB1))			//	Direction of the PB1
+#define DIR_SW1		DDRB & (~(1<<PB0))			//	O/P Direction of the PB0
+#define DIR_SW2		DDRB & (~(1<<PB1))			//	O/P Direction of the PB1
 
-#define DIR_LED1	DDRB | (1<<PB6)				//	Direction of the PB6
-#define DIR_LED2	DDRB | (1<<PB7)				//	Direction of the PB7
+#define DIR_LED1	DDRB | (1<<PB6)				//	I/P Direction of the PB6
+#define DIR_LED2	DDRB | (1<<PB7)				//	I/P Direction of the PB7
 
 #define VAL_SW1		( ! (PINB & (1<<PB0)))		//	Assign the PB0 is the initially 0
 #define VAL_SW2		( ! (PINB & (1<<PB1)))		//	Assign the PB1 is the initially 0
